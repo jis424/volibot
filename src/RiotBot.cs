@@ -95,8 +95,8 @@ namespace RitoBot
             connection.OnMessageReceived += new LoLConnection.OnMessageReceivedHandler(this.connection_OnMessageReceived);
             switch (region)
             {
-                case "EUW":
-                    connection.Connect(username, password, Region.EUW, Program.cversion);
+                case "JP":
+                    connection.Connect(username, password, Region.JP, Program.cversion);
                     break;
                 case "EUNE":
                     connection.Connect(username, password, Region.EUN, Program.cversion);
@@ -630,7 +630,7 @@ namespace RitoBot
         {
             try
             {
-                if (region == "EUW")
+                if (region == "JP")
                 {
                     string url = await connection.GetStoreUrl();
                     HttpClient httpClient = new HttpClient();
