@@ -43,7 +43,7 @@ namespace RitoBot
         public static bool rndSpell = true;
         public static string spell1 = "flash";
         public static string spell2 = "ignite";
-        public static string cversion = "5.1.15_01_09_17_50";
+        public static string cversion = "6.4.16_02_22_17_11";
         public static bool AutoUpdate = false;
         public static bool LoadGUI = false;
         public static frm_MainWindow MainWindow = new frm_MainWindow();
@@ -257,7 +257,7 @@ namespace RitoBot
                 
                 var newfile = File.Create(configTxtLocation);
                 newfile.Close();
-                var content = "[General]\nLauncherPath=C:\\Riot Games\\League of Legends\\\nLoadGUI=false\nMaxBots=1\nMaxLevel=31\nChampionPick=Annie\nSpell1=Flash\nSpell2=Exhaust\nRndSpell=false\nReplaceConfig=false\nAutoUpdate=false\n\n[Account]\nRegion=EUW\nBuyBoost=false";
+                var content = "[General]\nLauncherPath=A:\\Riot Games\\League of Legends\\\nLoadGUI=false\nMaxBots=1\nMaxLevel=31\nChampionPick=Annie\nSpell1=Heal\nSpell2=Ignite\nRndSpell=false\nReplaceConfig=false\nAutoUpdate=false\n\n[Account]\nRegion=JP\nBuyBoost=false";
                 var separator = new string[] { "\n" };
                 string[] contentlines = content.Split(separator,StringSplitOptions.None);
                 File.WriteAllLines(configTxtLocation, contentlines);
