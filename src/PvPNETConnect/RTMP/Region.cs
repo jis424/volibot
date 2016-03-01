@@ -14,11 +14,11 @@ namespace LoLLauncher
         [UseGarenaValue(false)]
         NA,
 
-        [ServerValue("prod.euw1.lol.riotgames.com")]
-        [LoginQueueValue("https://lq.euw1.lol.riotgames.com/")]
-        [LocaleValue("en_GB")]
+        [ServerValue("prod.jp1.lol.riotgames.com")]
+        [LoginQueueValue("https://lq.jp1.lol.riotgames.jp/")]
+        [LocaleValue("ja_JP")]
         [UseGarenaValue(false)]
-        EUW,
+        JP,
 
         [ServerValue("prod.eun1.lol.riotgames.com")]
         [LoginQueueValue("https://lq.eun1.lol.riotgames.com/")]
